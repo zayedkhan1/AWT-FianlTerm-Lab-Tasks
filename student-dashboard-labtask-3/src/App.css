@@ -1,0 +1,255 @@
+/* Search */
+
+.search-box {
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  font-size: 16px;
+}
+
+
+/* Sort Buttons */
+
+.sort-controls {
+  display: flex;
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+.sort-controls button {
+  padding: 8px 15px;
+
+  border: 1px solid #ccc;
+  background-color: white;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.sort-controls button:hover {
+  background-color: #eee;
+}
+
+.sort-controls .active-sort {
+  background-color: blue;
+  color: white;
+}
+
+
+/* Favorite Button */
+
+.favorite-button {
+  margin-top: 15px;
+
+  padding: 7px 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  background-color: white;
+
+  cursor: pointer;
+}
+
+.favorite-button:hover {
+  background-color: #eee;
+}
+
+.favorite-button.favorite {
+  color: orange;
+  font-weight: bold;
+}
+
+
+/* Loading */
+
+.loading {
+  text-align: center;
+  padding: 40px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  border: 5px solid #ddd;
+  border-top: 5px solid blue;
+
+  border-radius: 50%;
+
+  margin: auto;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+/* No Results */
+
+.no-results {
+  text-align: center;
+  padding: 30px;
+
+  color: gray;
+}
+
+/* Dark Mode */
+
+.app.dark {
+  background-color: #222;
+  color: white;
+
+  min-height: 100vh;
+}
+
+.app.dark .dashboard-header {
+  background-color: #333;
+}
+
+.app.dark .dashboard-header h1 {
+  color: white;
+}
+
+.app.dark .dashboard-header p {
+  color: #ccc;
+}
+
+.app.dark .dashboard-header nav a {
+  color: white;
+}
+
+.app.dark .stat-badge {
+  background-color: #333;
+  color: white;
+}
+
+.app.dark .student-card {
+  background-color: #333;
+  color: white;
+}
+
+.app.dark .student-id {
+  color: #ccc;
+}
+
+.app.dark .search-box input {
+  background-color: #444;
+  color: white;
+}
+
+.app.dark .sort-controls button {
+  background-color: #444;
+  color: white;
+}
+
+.app.dark .add-student {
+  background-color: #333;
+  color: white;
+}
+/* Add Student Form */
+
+.add-student {
+  background-color: white;
+
+  padding: 20px;
+
+  margin-bottom: 30px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+
+  font-size: 14px;
+
+  margin: 5px 0;
+}
+
+.add-button {
+  padding: 10px 20px;
+
+  background-color: blue;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.success-message {
+  background-color: #d1fae5;
+
+  color: green;
+
+  padding: 10px;
+
+  margin-bottom: 15px;
+
+  border-radius: 5px;
+}
+
+.remove-button {
+  margin-top: 10px;
+
+  margin-left: 10px;
+
+  padding: 7px 12px;
+
+  background-color: red;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
